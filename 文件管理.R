@@ -1,9 +1,9 @@
 #文件管理
 
-setwd("F:\\新增（期货、r、python）\\R")
+setwd("")
 list.dirs()                                        #查看当前目录的子目录
 dir()                                              #当前目录的子目录和文件
-dir(path="F:\\新增（期货、r、python）",all.files=TRUE)
+dir(path="F:\\",all.files=TRUE)
 file.info(".")                                     #查看当前目录权限
 dir.create("create")                               #在当前目录下，新建一个目录
 dir.create(path="a1/b2/c3",recursive = TRUE)       #创建一个3级子目录
