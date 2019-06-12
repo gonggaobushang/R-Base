@@ -26,3 +26,14 @@ cat("file B\n", file = "B.txt")                    #创建一个有内容的文�
 readLines("B.txt")
 file.append("A.txt", rep("B.txt", 10))             #再写文件
 file.copy("A.txt", "C.txt")                        #复制文件
+
+#sink
+sink('example.txt')
+x <-rnorm(100)
+y <-rnorm(100)
+cat (sprintf("The Number(x>y) %d \n", sum(x>y)))
+sink() 
+
+sink('example.txt', append=TRUE) 
+cat("True \n")
+sink()
