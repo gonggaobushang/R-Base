@@ -40,3 +40,28 @@ Sys.time()%>%quarters()
 
 as.POSIXlt(Sys.time())%>%unclass
 as.POSIXct(Sys.time())%>%unclass#距离1970-1-1的秒数
+
+
+library(stringr)
+grep(pattern = "[wW]",x=c("statesw","W","SD"),value = T)#[]匹配括号内的任意字符
+strsplit(x="strsplit.aslo.uses.regular.expressions", split="\\.")
+str_extract_all(c("123","456","321"),"[^3]")#^取反义
+str_extract_all(c("123","456$","321"),"[3$]")#$匹配字符串的结束
+str_extract_all(c("A！","a是？","a是一。"), pattern ="A|狗")#|或者
+str_extract_all(string = c("abc","ac","bc"),pattern = "ab?c")#?前面的字符可有可无且最多被匹配一次
+str_extract_all(string = c("abababab","abc","ac"),pattern = "(ab)*")#*前面的字符被匹配零次或多次
+str_extract_all(string = c("abababab","abc","ac"),pattern = "(ab)+")#+前面的字符匹配一次或多次
+str_extract_all(string = c("abababab","ababc","ababababc"),pattern = "(ab){2,3}")
+#( )表示一个字符组，括号内的字符串将作为一个整体被匹配
+#{n}重复n次 {n,}重复n次或更多次 {n,m}重复n次到m次
+str_extract_all(string = "my cridit card number: 34901358932236",pattern = "\\d")
+str_extract_all(string = "my cridit card number: 34901358932236",pattern = "[:digit:]")
+#[:digit:]	数字：0-9  [:lower:]	小写字母：a-z  [:upper:]	大写字母：A-Z
+#[:alpha:]	字母：a-z及A-Z  [:alnum:]	所有字母及数字  [:punct:]	标点符号，如. , ;等
+#[:blank:]	空字符，即：Space和Tab
+#\w	字符串，等价于[:alnum:] \W	非字符串，等价于[^[:alnum:]]
+#\s	空格字符，等价于[:blank:] \S	非空格字符，等价于[^[:blank:]]
+#\d	数字，等价于[:digit:] \D	非数字，等价于[^[:digit:]]
+#\b	Word edge（单词开头或结束的位置） \B	No Word edge（非单词开头或结束的位置）
+#\<	Word beginning（单词开头的位置） \>	Word end（单词结束的位置）
+
