@@ -21,3 +21,6 @@ json格式的转化
 
 ## tidyverse.R
 tidyverse包，带有list属性的data.frame
+
+## tryCatch.R
+用tryCatch进行异常处理等
