@@ -20,7 +20,8 @@ json格式的转化。
 字符串的处理，包括正则表达式、浮点数输出等。
 
 ## tidyverse.R
-tidyverse包，带有list属性的data.frame。
+tidyverse包，带有list属性的data.frame。  
+以及用read.csv(textConnection())方式建立数据框等。
 
 ## tryCatch.R
 用tryCatch进行异常处理等。
