@@ -28,3 +28,6 @@ tidyverse包，带有list属性的data.frame。
 
 ## base.R
 输出R的版本、运行环境。
+
+## RMySQL.R
+通过R连接MySQL数据库。
