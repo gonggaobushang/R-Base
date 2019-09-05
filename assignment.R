@@ -8,3 +8,12 @@ ifelse(data<-5,"YES","NO")
 factor(iris$Species,labels = c(1,2,3))
 #可以批量生成变量
 assign(x=paste0("a2",3),value = iris$Sepal.Length)
+
+#矩阵命名
+a=matrix(c(1,2,3,4),ncol=2,byrow = T)
+dimnames(a)<-list(c(1,2),c(3,4)) 
+
+#执行第几个语句
+switch (3,
+  "1",2,"cha"
+)
