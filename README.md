@@ -5,7 +5,7 @@
 文件管理。
 
 ## assignment.R
-r语言的赋值语法等。
+r语言的赋值语法等。矩阵命名、switch用法。
 
 ## clipboard.R
 粘贴板内容。
