@@ -1,5 +1,5 @@
 library(RMySQL)
-con <- dbConnect(MySQL(), host="172.29.7.75", dbname="db", user="dbuser", password="aa123456")
+con <- dbConnect(MySQL(), host="***", dbname="***", user="***", password="***")
 summary(con)
 dbGetInfo(con)
 dbListResults(con)
