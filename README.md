@@ -2,7 +2,7 @@
 介绍一些R基础的知识。
 
 ## Document management.R
-文件管理。
+文件管理。读写文件。
 
 ## assignment.R
 r语言的赋值语法等。矩阵命名、switch用法。
