@@ -37,3 +37,23 @@ sink()
 sink('example.txt', append=TRUE) 
 cat("True \n")
 sink()
+
+#R文件
+load("R file address")
+#csv文件
+read.csv("csv file address")
+write.csv(data, 'file addess')
+#excel文件
+library(xlsx); read.xlsx("xlsx file address")
+#spss文件
+library(foreign); read.spss("spss file address")
+
+#保存数据
+#R格式
+save(data, file='file addess')
+#一次性存全部变量
+save.image(file)
+load(file)
+#csv格式
+
+
