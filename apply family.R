@@ -1,3 +1,4 @@
+#sapply
 data(quakes)
 getColor <- function(quakes) {
   sapply(quakes$mag, function(mag) {
@@ -11,9 +12,7 @@ getColor <- function(quakes) {
 }
 getColor(quakes[c(1:20),])
 
-
 data(iris)
-
 irisiri<-function(iris){
   sapply(iris$Species,function(Specise){
     if(Specise=="setosa" ){
@@ -27,4 +26,3 @@ irisiri<-function(iris){
          )
 }
 irisiri(iris[c(1:12),])
-
