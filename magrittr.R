@@ -11,11 +11,7 @@ count_of_read <- web %>% html_nodes("dl.bbda dd.xg1 a") %>% html_text()
 count_of_read <- as.data.frame(count_of_read)
 count_of_read <- sqldf("select * from count_of_read where count_of_read like '%次阅读'")
 
-
-# https://blog.csdn.net/flyfrommath/article/details/79013582
-
 library(magrittr)
-
 ################################################### %>% 向右操作符
 # 设置随机种子
  set.seed(1)
