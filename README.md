@@ -35,5 +35,5 @@ tidyverse包，带有list属性的data.frame。
 ## apply family.R
 介绍apply族，优化循环。
 
-## magrittr.R
-管道函数如%>%，减少赋值优化内存。
+ ## dplyr family.R
+介绍dplyr包。
