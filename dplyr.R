@@ -1,4 +1,3 @@
-# https://blog.csdn.net/wltom1985/article/details/54973811 
 library(dplyr)
 #################过滤行
 filter(mtcars, cyl < 6 & vs == 1)
@@ -184,25 +183,6 @@ case_when(
 )
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-###############################################对着包还不够熟悉，在学习一遍
-# https://mp.weixin.qq.com/s/9xmXkB9McLoPqm3z2UmXrA
-iris
 sample_n(iris,3) #随机选择行数
 sample_frac(iris,0.1) #随机返回0.1倍总行数的行数
 distinct(iris)#删除重复项
