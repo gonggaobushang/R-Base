@@ -56,4 +56,5 @@ save.image(file)
 load(file)
 #csv格式
 
-
+#当前工作目录+名称
+ file.path(tempdir(), 'name.csv')
